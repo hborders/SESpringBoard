@@ -22,7 +22,9 @@
 @property BOOL isInEditingMode;
 @property (nonatomic, assign) id <MenuItemDelegate> delegate;
 
-+ (id) initWithTitle:(NSString *)title imageName:(NSString *)imageName viewController:(UIViewController *)viewController removable:(BOOL)removable;
+- (id) initWithTitle:(NSString *)title :(NSString *)imageName :(UIViewController *)viewController :(BOOL)removable;
+
++ (id) menuItemWithTitle:(NSString *)title imageName:(NSString *)imageName viewController:(UIViewController *)viewController removable:(BOOL)removable;
 
 - (void) enableEditing;
 - (void) disableEditing;
